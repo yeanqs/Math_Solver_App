@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for dark mode */
+.scrollbar-dark::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Custom scrollbar for light mode */
+.scrollbar-light::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-light::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Button press animation */
+button {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Typography */
+body {
+  @apply antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
